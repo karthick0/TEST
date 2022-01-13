@@ -1,0 +1,49 @@
+<%- include('header') -%>
+
+
+<nav class="navbar navbar-light bg-light">
+<div id="navBar"class="container-fluid">
+<span class="navbar-brand mb-0 h1">Click the checkbox to delete any list</span>
+</div>
+</nav>
+
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Age</th>
+        <th scope="col">Mobile No</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Department</th>
+        <th scope="col">Address</th>
+        <th scope="col">Checkbox</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% finalData.forEach(function(data){ %>
+        <tr>
+          <th scope="row"><%= data.name %></th>
+          <td><%= data.dob %></td>
+          <td><%= data.age %></td>
+          <td><%= data.mobileNo %></td>
+          <td><%= data.Email %></td>
+          <td><%= data.department %></td>
+          <td><%= data.address %></td>
+          <form class="" action="/delete" method="post">
+            <td><input type="checkbox" name = "checkbox" value="<%= data._id %>" onChange="this.form.submit()"></td>
+
+          </form>
+          </tr>
+      <% }) %>
+
+    </tbody>
+
+
+
+  </table>
+
+
+  <%- include('footer') -%>

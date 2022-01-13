@@ -1,0 +1,66 @@
+<%- include('header') -%>
+
+
+<nav class="navbar navbar-light bg-light">
+  <div id="navBar" class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Student Details</span>
+  </div>
+</nav>
+<div class="container-fluid">
+  <p>
+    Enter All the Fields And then Click Submit Button
+    </p>
+
+  <form class="" action="/" method="post">
+
+    <!-- .......................NAME -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="exampleFormControlInput1" autofocus autocomplete="off" placeholder="Name">
+    </div>
+
+
+    <!-- ......................DOB -->
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">DOB</label>
+      <input type="date" class="form-control" name="dob" id="exampleFormControlInput1" placeholder="DOB" required  autocomplete="off">
+    </div>
+    <!-- ........................Mobile No -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Mobile No</label>
+      <input type="text" class="form-control" name="mobileNo" id="exampleFormControlInput1" required autocomplete="off" placeholder="Enter 10-Digit Mobile Number">
+    </div>
+    <!-- .......................E mail -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="eMail" id="exampleFormControlInput1" required autocomplete="off" placeholder="name@example.com">
+    </div>
+    <!-- .....................Department -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Department</label>
+      <input type="text" class="form-control" name="department" id="exampleFormControlInput1" autocomplete="off" required placeholder="Department">
+    </div>
+    <!-- .....................Address -->
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+      <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3" autocomplete="off" required placeholder="Address"></textarea>
+    </div>
+
+
+    <div class="mb-3">
+      <button class="btn btn-primary btn-lg" type="submit" name="button">Submit</button>
+    </div>
+  </form>
+
+  <form class="" action="/result" method="post">
+    <button class="btn btn-primary bn-lg mb-3 " type="submit" name="listButton">See Student List</button>
+  </form>
+
+
+
+
+</div>
+
+<%- include("footer") -%>

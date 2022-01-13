@@ -1,0 +1,32 @@
+body{
+  width: 100%;
+}
+
+
+#navBar.container-fluid{
+  margin: 1%;
+}
+.container-fluid{
+  margin: 2% 2.5%;
+  width: 90%;
+}
+.form-control{
+  width: 50%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+
+}
+.empty{
+text-align: center;
+font-size: 2rem;
+}
+
+p{
+  font-size: 1.5rem;
+}
